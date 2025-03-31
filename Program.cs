@@ -10,23 +10,9 @@ namespace Week4Lesson13
             {
                 var number = GetNumber();
 
-                if (number % 3 == 0 && number % 5 == 0)
-                {
-                    Console.WriteLine("FizzBuzz");
-                    continue;
-                }
-                if (number % 3 == 0)
-                {
-                    Console.WriteLine("Fizz");
-                    continue;
-                }
-                if (number % 5 == 0)
-                { 
-                    Console.WriteLine("Buzz");                 
-                    continue;
-                }
+                var fizzbuzz = new FizzBuzz();                
 
-                Console.WriteLine(number);
+                Console.WriteLine(fizzbuzz.ReturnString(number));
             }           
         }
 
